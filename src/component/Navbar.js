@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-function Try() {
+function Navbar() {
     return (
         <div>
 
@@ -10,7 +10,7 @@ function Try() {
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasScrolling">
                         <span className="navbar-toggler-icon"></span>
-                        <a className="navbar-brand ml-3 " href="#">Fish Farm Monitoring</a>
+                        <span className="navbar-brand ml-3 " >Fish Farm Monitoring</span>
                     </button>
 
 
@@ -43,4 +43,4 @@ function Try() {
     )
 }
 
-export default Try
+export default Navbar
