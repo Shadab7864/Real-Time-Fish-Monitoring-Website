@@ -7,7 +7,7 @@ const store = configureStore({
 
     // reducer declaration
     reducer:{
-        view:addReducer,
+        view:addReducer, // same as slice name
 
 
     },

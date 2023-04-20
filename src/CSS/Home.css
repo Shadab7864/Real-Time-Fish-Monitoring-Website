@@ -1,5 +1,7 @@
 .parent-container{
-    background-color: #4156CD    ;
+    /* background:linear-gradient(rgba(0, 0, 0, 0.5),transparent); */
+    background-image: linear-gradient(to right, rgb(65, 100, 45) , rgb(43, 98, 100));
+    background-color: #5a5a5a    ;
     min-width:auto ;
     margin-top:58px;
     color:antiquewhite;
@@ -8,12 +10,14 @@
 }
 .gridAlign{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
+}
+.GRID{
+    margin-top:58px;
+    background-color: #5a5a5a;
 }
 
 .Field1-Container{
-
-    
     background-color:  whitesmoke;
     color:black;
 }
@@ -33,5 +37,18 @@ color:black;
 .button{
     display:flex;
     justify-content: flex-end;
-    margin: 0px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+}
+.tempDash{
+    justify-content: center;
+    margin:10px;
+
+}
+.addDash{
+    margin:0px;
+}
+.Add{
+margin:auto;
+border:dashed black;
+border-radius:5px;
 }

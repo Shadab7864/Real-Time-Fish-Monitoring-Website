@@ -20,7 +20,8 @@ export const Slice = createSlice({
     // Initial State Stores all the variables and data type
     initialState: {
         isLoading: false,
-        data: null,
+        graphData: null,
+        recentData:null,
         isError: false
     },
 
@@ -32,12 +33,12 @@ export const Slice = createSlice({
         // if API calling for getData() is successfull
         builder.addCase(getData.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.data = action.payload;
+            state.graphData = action.payload;
         });
         // if API calling for newData() is successfull
         builder.addCase(newData.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.data = action.payload;
+            state.recentData= action.payload;
         });
         // if API calling for getData() is pending
         builder.addCase(getData.pending, (state, action) => {
