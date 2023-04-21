@@ -20,11 +20,9 @@ function Navbar() {
         dispatch(newData());
     }, [dispatch])
 
-
     // Storing the data from API in Data 
     const recentData = useSelector((state) => state);
     const graphData = useSelector((state) => state);
-
 
     // For fetching required data for Graph
     const fetchData = () => {
@@ -57,9 +55,6 @@ function Navbar() {
                     </div>
                 </Grid>
             </nav>
-
-
-
 
             {/* MY code for Page Started */}
             <Grid className='GRID' >
@@ -126,10 +121,7 @@ function Navbar() {
                                 <Button className='addDash'> <AddIcon className='Add' sx={{ fontSize: '45px' }} /></Button>
 
                             </Grid>
-
                         </Grid>
-
-
                         {/* For  pH value */}
 
                         <Grid item className="Field2-Container" >
@@ -152,7 +144,6 @@ function Navbar() {
                                     <button onClick={fetchData} className='btn btn-info btn-sm' data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"  >Show Graph</button>
                                 </Grid>
                                 {/* Displaying data using bootstrap modal  */}
-
                                 <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabIndex="-1">
                                     <div className="modal-dialog modal-dialog-centered">
                                         <div className="modal-content">
@@ -177,11 +168,7 @@ function Navbar() {
                                     </div>
                                 </div>
 
-
-
-
-
-                                {/* FOR Adding more  */}
+                                {/* FOR Adding more component */}
 
                                 <Button className='addDash'  > <AddIcon className='Add' sx={{ fontSize: '45px' }} /></Button>
 
@@ -190,18 +177,16 @@ function Navbar() {
 
                         {/* for Total Dissolved Solid */}
 
-
                         <Grid item boxShadow={10} className="Field3-Container" >
                             <h4 className="heading">Total Dissolved Solid</h4>
                             <Grid container gap={1} className="tempDash">
 
-
                                 {/* To add more than 1 value */}
                                 <Grid margin={2}>
+
                                     {/* Displaying data using map() */}
                                     {
                                         recentData.view.recentData && recentData.view.recentData.feeds.map((data, i) => (
-
                                             <Grid key={i}>
                                                 {data.field2} PPM
                                             </Grid>
@@ -213,7 +198,6 @@ function Navbar() {
                                     <button onClick={fetchData} className='btn btn-info btn-sm' data-bs-toggle="modal" data-bs-target="#exampleModalToggle3 " >Show Graph</button>
                                 </Grid>
                                 {/* Displaying data using bootstrap modal  */}
-
                                 <div className="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabIndex="-1">
                                     <div className="modal-dialog modal-dialog-centered">
                                         <div className="modal-content">
@@ -237,11 +221,6 @@ function Navbar() {
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
 
                                 {/* FOR Adding more sensor */}
 
